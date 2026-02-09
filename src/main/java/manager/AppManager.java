@@ -22,7 +22,7 @@ public class AppManager {
     }
     // (@BeforeMethod) setup --> (@Test) testName --> (@AfterMethod) tearDown
 
-    @AfterMethod (enabled = false)
+    @AfterMethod (enabled = true)
     public void tearDown(){ //What we do after tests?
         if(driver != null){
             driver.quit(); // close the window of Chrome.
